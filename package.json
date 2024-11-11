@@ -1,5 +1,6 @@
 {
   "name": "vue-with-basics",
+  "homepage": "https://github.com/Sanoop-s/todo-with-props-emit",
   "private": true,
   "version": "0.0.0",
   "type": "module",
