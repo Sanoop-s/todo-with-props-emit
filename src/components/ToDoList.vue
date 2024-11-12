@@ -79,16 +79,16 @@ const handleDelete = (val) => {
 </script>
 
 <template>
-    <div class="card" style="margin-top: 30px;">
+    <div class="card card-top" >
         <div style="padding: 0px 15px;">
-            <p style="font-weight: 500;">{{ $route.params.heading }}</p>
+            <p style="font-weight: 500;">Add Task</p>
             <div class="inputCont">
-                <div style="width: 70%;">
+                <div style="width: 75%;">
                     <input type="text" class="form-control" v-model="value" placeholder="Task name">
                     <span class="text-danger" v-if="required">This field is required.</span>
                     <span class="text-danger" v-if="duplicate">This task already exists!</span>
                 </div>
-                <div style="width: 30%;">
+                <div style="width: 25%;">
                     <button type="button" class="addBtn float-right" @click="onAdd">+ Add</button>
                 </div>
             </div>
@@ -155,8 +155,10 @@ h2 {
     outline: #0b96ff auto 1px;
 }
 
-button {
-    background-color: #0b96ff;
-    color: white;
+
+.card-top{
+    margin-top: 15px;
+    box-shadow: none;
+    text-align: left;
 }
 </style>

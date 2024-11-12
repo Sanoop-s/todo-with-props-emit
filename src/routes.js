@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import ToDoList from "./components/ToDoList.vue";
+import Home from "./components/Home.vue";
 
 const routes = [
-    { path: "/", redirect:'/to-do/Addtask' },
-    { path: "/to-do/:heading", component:() => ToDoList}
+    { path: "/",component:Home, name:"home" },
+    { path: "/to-do", component:() => ToDoList,name:'todo'}
 ]
  
 export const router = createRouter({

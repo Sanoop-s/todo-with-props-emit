@@ -1,13 +1,10 @@
 <script setup>
+
 </script>
 
 <template>
   <div class="head">
-    <nav>
-      <div>
-        <router-link to="/to-do/Add task">To-do</router-link>
-      </div>
-    </nav>
+    <p class="fw-500">Todo </p>
     <div>
       <img src="./assets/user/user.jpg" alt="user-img" width="50px" height="50px" class="img-responsive">
     </div>
@@ -51,12 +48,13 @@ nav a.router-link-active {
 .head {
   background-color: #ffffff;
   padding: 10px 20px;
-  border-radius: 8px;
   border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   position: relative;
   align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .img-responsive {
@@ -64,5 +62,9 @@ nav a.router-link-active {
   width: 30px;
   height: 30px;
   border-radius: 100px;
+}
+
+.fw-500 {
+  font-weight: 500;
 }
 </style>
